@@ -192,7 +192,7 @@ Compare plans
 Request a quote
 Sign up for Free Trial
 '''
-list1 = re.findall(r'\w+@\S+\w', mystr)
+list1 = re.findall(r"[0-9a-zA-Z._+%]+@+[0-9a-zA-Z._+%]+[.][0-9a-zA-Z]+", mystr)
 textfile = open("1.txt", "a")
 j=1
 for i in list1:
